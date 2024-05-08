@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Workshop Form</title>
+</head>
+<body>
+    <header class="navigation-header">
+        <nav>
+            <!-- Logo Container -->
+            <div class="logo-container">
+                <a class="#" href="./index.html">
+                    <img src="./logo.webp" alt="">
+                </a>
+            </div>
+            <!-- Navigation Items -->
+            <div class="navigation-items" id="navigation-items">
+                <a href="./index.html">HOME</a>
+                <a href="./coding_workshop.html">WORKSHOP SIGNUP</a>
+
+            </div>
+        </nav>
+    </header>
+
+    <h1>SIGN UP TO ONE OF OUR WORKSHOPS</h1>
+
+    <section class="sign-up-form">
+        <form>
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="contact-phone">Contact Phone:</label>
+                <input type="text" id="contact-phone" name="contact-phone" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <!-- SELECT -->
+                <select name="gender" id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="programmingExperience">Programming Experience:</label>
+                <select name="programmingExperience" id="programmingExperience">
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="workshopSessions">Workshop Sessions:</label>
+                <select name="workshopSessions" id="workshopSessions">
+                    <option value="cssintro">Learn CSS: Introduction</option>
+                    <option value="Intermediate">Learn JavaScript: Best Practices</option>
+                    <option value="Advanced">Learn Swift: Properties and Access Control</option>
+                    <option value="Intermediate">Computer Architecture
+                    </option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="commentsQuestions">Comments/Questions:</label>
+                <input type="text" id="commentsQuestions" name="commentsQuestions" required>
+            </div>
+    
+            <div class="form-group">
+                <button id="submitBtn">Sign Up</button>
+            </div>
+        </form>
+
+        <div id="results"></div>
+    </section>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
